@@ -1,21 +1,22 @@
-# frontend-rekrutacja-Niyaz
+# 🛒 MyShop – Frontend Rekrutacja Stage 2
 
-## Development Steps
+Welcome to the **MyShop** test project!  
+This project demonstrates a responsive product list and details UI using modern web standards and Tailwind CSS.
 
-### Step 1: Project Setup & Product List Component
-- Initialize the project with the required dependencies and folder structure.
-- Create a static list of 5–10 products with basic information (e.g., name, price, image).
-- Implement a Product List component to display all products.
+---
 
-### Step 2: Product Details & Responsive Layout
-- Develop a Product Details component to show detailed information about a selected product.
-- Implement responsive layout logic:
-  - On large screens (≥768px): Display the product list in the left column and the product details in the right column.
-  - On small screens (<768px): Show only the product details card with a “Wróć do listy” (Back to list) button.
+## ✨ Features
 
-### Step 3: Interactivity & Final Touches
-- Add interactivity: clicking a product opens its details.
-- Implement the “Wróć do listy” button functionality for small screens.
-- Polish UI/UX, test responsiveness, and ensure accessibility and code quality.
+- **Modern, Responsive UI**  
+  Product list adapts to all screen sizes with a clean, accessible layout.
 
+- **Interactive Product Details**  
+  Click a product to view its details. On large screens, the list and details are side by side; on mobile, details fill the screen with a “Wróć do listy” (Back to list) button.
 
+- **Consistent Color Palette & Typography**  
+  Uses a blue/green/slate palette and carefully tuned font weights, spacing, and tracking for a professional look.
+
+- **Accessible & Animated**  
+  Keyboard focus, hover scaling (`hover:scale-105`), and semantic HTML for a great user experience.
+
+---
