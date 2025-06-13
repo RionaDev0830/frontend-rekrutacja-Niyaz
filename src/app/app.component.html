@@ -1,0 +1,34 @@
+<div class="p-4">
+  <h1 class="text-3xl font-bold mb-8 text-gray-800">Product List</h1>
+  <!-- Responsive layout -->
+  <div *ngIf="selectedProductId; else listOnly">
+    <!-- Large screens: grid, Small screens: details only -->
+    <div class="hidden md:grid grid-cols-4 gap-8">
+      <div class="col-span-1">
+        <app-product-list
+          [products]="products"
+          [selectedProductId]="selectedProductId"
+          (selectProduct)="onSelectProduct($event)">
+        </app-product-list>
+      </div>
+      <div class="col-span-3">
+        <app-product-details
+          [product]="selectedProduct"
+          (back)="onBackToList()">
+        </app-product-details>
+      </div>
+    </div>
+    <div class="block md:hidden">
+      <app-product-details
+        [product]="selectedProduct"
+        (back)="onBackToList()">
+      </app-product-details>
+    </div>
+  </div>
+  <ng-template #listOnly>
+    <app-product-list
+      [products]="products"
+      (selectProduct)="onSelectProduct($event)">
+    </app-product-list>
+  </ng-template>
+</div>
